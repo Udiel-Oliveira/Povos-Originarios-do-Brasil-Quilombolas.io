@@ -9,12 +9,51 @@ font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    background-color: var(--cor-secundaria);
 }
 :root
 {
-    --corprimaria: #ffff;
-    --corsecundaria: #000
-    --cordetalhes1:#200808;
-    --cordetalhes2:#4A2F2F;
+    --cor-primaria: #ffff;
+    --cor-secundaria: #000;
+    --cor-detalhes1:#200808;
+    --cor-detalhes2:#4A2F2F;
 }
+nav
+{
+/*Display stuff*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+/*Box model stuff*/
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border-bottom: 2px solid var(--cor-primaria) ;
+}
+.icon img, .menu img
+{
+    width: 65%;
+    cursor: pointer;
+}
+.container
+{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Miscellaneous*/
+    gap: 5rem;
+}
+.redes_sociais
+{
+/*Display stuff*/
+    display: flex;
+/*Typography stuff*/
+    font-size: 1.5rem;
+/*Miscellaneous*/
+    gap: 1.30rem;
+    cursor: pointer;
+}
+
+
+
+
