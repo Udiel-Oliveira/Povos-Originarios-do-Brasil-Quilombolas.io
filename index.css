@@ -9,7 +9,11 @@ font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--cor-secundaria);
+}
+body
+{
+    background: linear-gradient(90deg, #2E0F0F -80.88%, #000 100%);
+    overflow-x: hidden;
 }
 :root
 {
@@ -18,6 +22,7 @@ font-family: 'Rubik', sans-serif;
     --cor-detalhes1:#200808;
     --cor-detalhes2:#4A2F2F;
 }
+/*-------------------------------nav----------->*/
 nav
 {
 /*Display stuff*/
@@ -30,12 +35,13 @@ nav
     padding: 0.5rem 2rem;
     border-bottom: 2px solid var(--cor-primaria) ;
 }
+/*---------------[ icone - nav ]----------------->*/
 .icon img, .menu img
 {
     width: 65%;
     cursor: pointer;
 }
-.container
+.container_menu
 {
 /*Display stuff*/
     display: flex;
@@ -54,6 +60,196 @@ nav
     cursor: pointer;
 }
 
+/*-------------------------------main----------->*/
 
+main{
+/*Positioning stuff*/
+    position: relative;
+/*Box model stuff*/
+    width: 100%;
+    height: 100%;
+}
 
+.container2
+{
+/*Display stuff*/
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+/*Positioning stuff*/
+    position: relative;
+    z-index: 1;
+/*Box model stuff*/
+    height: 100vh;
+/*Miscellaneous*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*-------------------------------nav----------->*/
 
+/*-------------------------------Item1----------->*/
+
+.item_1
+{
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+/*Box model stuff*/
+    margin-left: 4rem;
+/*Miscellaneous*/
+    gap: 2rem;
+}
+
+/*---------------[ Item1 - h1 ]----------------->*/
+
+.item_1 h1
+{
+/*Box model stuff*/
+  margin-left: -7rem;
+  margin-top: 40px;
+/*Typography stuff*/
+  font-family: 'Rubik', sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+#q
+{
+/*Box model stuff*/
+  width:50px;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right:2px;
+  border:2px solid transparent;
+  border-radius: 100%;
+  background-color: #4A2F2F;
+/*Typography stuff*/
+  color:#200808}
+#bol
+{
+/*Box model stuff*/
+  width:50px;
+  padding: 55px;
+  padding-bottom: 25px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top: 25px;
+  border:2px solid transparent;
+  border-radius: 100%;
+  background-color: #4A2F2F;
+/*Typography stuff*/
+  color: #200808;
+}
+/*---------------[ Item1 - h1 ]----------------->*/
+
+.item_1 h2
+{
+/*Box model stuff*/
+    margin-top: 10px;
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+#brasil
+{
+    color: var(--cor-detalhes2);
+}
+
+#text_it1
+{
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--cor-primaria);
+}
+/*---------------[ Item1 - button ]----------------->*/
+#btn_it1
+{
+/*Box model stuff*/
+    padding: 12px 30px 12px 20px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 0px 40px 40px 0px;
+    background-color: transparent;
+/*Typography stuff*/
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+/*Miscellaneous*/
+    cursor: pointer;
+}
+
+.arrow_btn
+{
+/*Box model stuff*/
+    margin-left: 3rem;
+/*Typography stuff*/
+    font-size: 15px;
+}
+/*---------------[ Item1 - button ]----------------->*/
+
+/*-------------------------------Item1----------->*/
+
+/*-------------------------------Item2----------->*/
+.item_2
+{
+/*Display stuff*/
+    display: flex;
+    justify-content: center;
+}
+#img_it2
+{
+/*Positioning stuff*/
+    position: absolute;
+/*Box model stuff*/
+    width: 100%;
+    max-width: 620px;
+    margin-top: 20px;
+/*Miscellaneous*/
+    overflow-y: hidden;
+}
+/*-------------------------------Item2----------->*/
+
+/*------------------------- Fundo Circulos------->*/
+.circulos
+{
+/*Positioning stuff*/
+    z-index: 0;
+/*Box model stuff*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.circulo1
+{
+    
+/*Box model stuff*/
+    width: 600px;
+    height: 600px;
+    margin: 23px 140px 0px 844px;
+    border-radius: 750px;
+    background: #4A2F2F;
+}
+.circulo2
+{
+/*Positioning stuff*/
+    position: absolute;
+
+/*Box model stuff*/
+    margin-left: 590px;
+    margin-top: 395px;
+}
+.circulo3
+{
+/*Positioning stuff*/
+    position: absolute;
+    top: 610px;
+}
+/*------------------------- Fundo Circulos------->*/
+
+/*-------------------------------main----------->*/
