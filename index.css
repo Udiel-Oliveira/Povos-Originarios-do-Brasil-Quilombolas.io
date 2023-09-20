@@ -23,7 +23,7 @@ body
     --cor-detalhes1:#200808;
     --cor-detalhes2:#4A2F2F;
 }
-/*-------------------------------nav----------->*/
+/*-------------------------------nav------------------------------------------------------------------------------>*/
 nav
 {
 /*Display stuff*/
@@ -34,7 +34,10 @@ nav
 /*Box model stuff*/
     width: 100%;
     padding: 0.5rem 2rem;
+    background: linear-gradient(to right, black , transparent);
+    
     border-bottom: 2px solid var(--cor-primaria) ;
+    z-index: 4;
 }
 /*---------------[ icone - nav ]----------------->*/
 .icon img, .menu img
@@ -61,7 +64,7 @@ nav
     cursor: pointer;
 }
 
-/*-------------------------------main----------->*/
+/*-------------------------------main----------------------------------------------------------------------------->*/
 
 main{
 /*Positioning stuff*/
@@ -80,12 +83,12 @@ main{
     position: relative;
     z-index: 1;
 /*Box model stuff*/
-    height: 100vh;
+    height: 95vh;
 /*Miscellaneous*/
     overflow-x: hidden;
     overflow-y: hidden;
 }
-/*-------------------------------nav----------->*/
+/*-------------------------------nav------------------------------------------------------------------------------>*/
 
 /*-------------------------------Item1----------->*/
 
@@ -126,21 +129,22 @@ main{
   border-radius: 100%;
   background-color: #4A2F2F;
 /*Typography stuff*/
-  color:#200808}
+  color:#200808;
+}
 #bol
 {
 /*Box model stuff*/
-  width:50px;
-  padding: 55px;
-  padding-bottom: 25px;
-  padding-left:5px;
-  padding-right:5px;
-  padding-top: 25px;
-  border:2px solid transparent;
-  border-radius: 100%;
-  background-color: #4A2F2F;
+    width:50px;
+    padding: 55px;
+    padding-bottom: 25px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top: 25px;
+    border:2px solid transparent;
+    border-radius: 100%;
+    background-color: #4A2F2F;
 /*Typography stuff*/
-  color: #200808;
+    color: #200808;
 }
 /*---------------[ Item1 - h1 ]----------------->*/
 
@@ -189,6 +193,7 @@ main{
     margin-left: 3rem;
 /*Typography stuff*/
     font-size: 15px;
+    animation: arrow 1.5s ease-in-out infinite;
 }
 /*---------------[ Item1 - button ]----------------->*/
 
@@ -235,12 +240,13 @@ main{
     margin: 23px 140px 0px 844px;
     border-radius: 750px;
     background: #4A2F2F;
+    animation: moveUpDown 3s ease-in-out infinite;
 }
 .circulo2
 {
 /*Positioning stuff*/
     position: absolute;
-
+    animation: moveUpDown 2.5s ease-in-out infinite;
 /*Box model stuff*/
     margin-left: 590px;
     margin-top: 395px;
@@ -250,22 +256,235 @@ main{
 /*Positioning stuff*/
     position: absolute;
     top: 587px;
+    animation: moveUpDown 2s ease-in-out infinite;
 }
 /*------------------------- Fundo Circulos------->*/
 
-/*-------------------------------main----------->*/
+/*----------------------------- Slides ---------->*/
+
+.sliders
+{
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+/*Box model stuff*/
+    width: 100%;
+    height: 100vh;
+    padding: 40px 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#slider1
+{
+    background-image: url(/imagens/slider-\ 1\ black.png);
+}
+#slider2
+{
+    background-image: url(/imagens/slider-\ 2\ black.png);
+}
+#slider3
+{
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+/*Box model stuff*/
+    width: 100%;
+    height: 100vh;
+    padding: 40px 100px;
+    background-image: url(imagens/slider-\ 3\ black.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.slider_title
+{
+/*Box model stuff*/
+    margin-bottom: 3rem;
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+}
+.text 
+{
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+}
+.parallax-bg 
+{
+/*Positioning stuff*/
+    position: absolute;
+    left: 0;
+    top: 0;
+/*Box model stuff*/
+    width: 130%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+/*Miscellaneous*/
+    -webkit-background-size: cover;
+  }
+
+  .swiper-pagination-bullet{
+    background: var(--cor-primaria);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet
+  {
+/*Box model stuff*/
+    background: #ffff;
+/*Manipulations stuff*/
+    opacity: 1;
+  }
+
+/*---------------------------[ Slide 3 ]--------->*/
+  .title_3
+  {
+/*Box model stuff*/
+    margin-top: 5rem;
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+  }
+  .dificuldades
+  {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+/*Box model stuff*/
+    margin-top: 5rem;
+  }
+
+  .dif_2:nth-child(4)
+  {
+/*Box model stuff*/
+    padding: 115px 50px;
+    border: 5px solid var(--cor-detalhes2);
+    border-radius: 100%;
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--cor-detalhes2);
+/*Miscellaneous*/
+    letter-spacing: 10px;
+  }
+  .dif_2:nth-child(2)
+  {
+/*Box model stuff*/
+    padding: 100px 60px;
+    border: 5px solid var(--cor-detalhes2);
+    border-radius: 100%;
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--cor-detalhes2);
+/*Miscellaneous*/
+    letter-spacing: 10px;
+  }
+
+.dif_2:nth-child(2):hover, .dif_2:nth-child(4):hover {
+/*Box model stuff*/
+    border: 5px solid var(--cor-detalhes2);
+    background-color: var(--cor-detalhes2);
+/*Typography stuff*/
+    color: var(--cor-primaria);
+/*Manipulations stuff*/
+    transition: all 0.5s;
+  }
+
+  .dif_1:nth-child(1)
+  {
+/*Box model stuff*/
+    padding: 85px 65px;
+    border: 5px solid var(--cor-detalhes2);
+    border-radius: 100%;
+    background-color: var(--cor-detalhes2);
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+/*Miscellaneous*/
+    letter-spacing: 10px;
+  }
+  
+  .dif_1:nth-child(3)
+  {
+/*Box model stuff*/
+    padding: 120px 65px;
+    border: 5px solid var(--cor-detalhes2);
+    border-radius: 100%;
+    background-color: var(--cor-detalhes2);
+/*Typography stuff*/
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+/*Miscellaneous*/
+    letter-spacing: 10px;
+  }
+
+  .dif_1:nth-child(1):hover, .dif_1:nth-child(3):hover {
+/*Box model stuff*/
+    border: 5px solid var(--cor-detalhes2);
+    background-color: transparent;
+/*Typography stuff*/
+    color: var(--cor-detalhes2);
+/*Manipulations stuff*/
+    transition: all 0.5s;
+  }
+
+/*---------------------------[ Slide 3 ]--------->*/
+
+/*----------------------------- Slides --------------------------------------------------------------------------->*/
+
+/*-------------------------------main----------------------------------------------------------------------------->*/
 
 
+/*
+  width:50px;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right:2px;
+*/
 
 
+/*-------------------------------Animações----------------------------------------------------------------------------->*/
+@keyframes arrow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
 
-
-
-
-
-
-
-
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Inicial e estado final: sem deslocamento vertical */
+    }
+    50% {
+      transform: translateY(-20px); /* Estado intermediário: desloca 20px para cima */
+    }
+  }
+/*-------------------------------Animações----------------------------------------------------------------------------->*/
 
 
 
@@ -286,155 +505,3 @@ swiper-slide {
 }
 */
 
-.sliders
-{
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 100px;
-}
-#slider1
-{
-    background-image: url(/imagens/slider-\ 1\ black.png);
-}
-#slider2
-{
-    background-image: url(/imagens/slider-\ 2\ black.png);
-}
-#slider3
-{
-    background-image: url(imagens/slider-\ 3\ black.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 100px;
-    
-}
-.slider_title
-{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    font-size: 65px;
-    text-transform: uppercase;
-    color: var(--cor-primaria);
-    margin-bottom: 3rem;
-}
-.text 
-{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    text-transform: uppercase;
-    color: var(--cor-primaria);
-}
-.parallax-bg 
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .swiper-pagination-bullet{
-    background: var(--cor-primaria);
-    opacity: 1;
-  }
-  .swiper-pagination-bullet
-  {
-    background: #ffff;
-    opacity: 1;
-  }
-  .title_3
-  {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    font-size: 65px;
-    text-transform: uppercase;
-    color: var(--cor-primaria);
-    margin-top: 5rem;
-  }
-  .dificuldades
-  {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .dif_2:nth-child(4)
-  {
-    padding: 115px 50px;
-    border: 5px solid var(--cor-detalhes2);
-    border-radius: 100%;
-    color: var(--cor-detalhes2);
-    letter-spacing: 10px;
-    font-weight: 300;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-  }
-  .dif_2:nth-child(2)
-  {
-    padding: 100px 60px;
-    border: 5px solid var(--cor-detalhes2);
-    border-radius: 100%;
-    color: var(--cor-detalhes2);
-    letter-spacing: 10px;
-    font-weight: 300;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-  }
-
-.dif_2:nth-child(2):hover, .dif_2:nth-child(4):hover {
-    border: 5px solid var(--cor-detalhes2);
-    color: var(--cor-primaria);
-    background-color: var(--cor-detalhes2);
-    transition: all 0.5s;
-  }
-
-  .dif_1:nth-child(1)
-  {
-    padding: 85px 65px;
-    border: 5px solid var(--cor-detalhes2);
-    border-radius: 100%;
-    background-color: var(--cor-detalhes2);
-    color: var(--cor-primaria);
-    letter-spacing: 10px;
-    font-weight: 300;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-  }
-  
-  .dif_1:nth-child(3)
-  {
-    padding: 120px 65px;
-    border: 5px solid var(--cor-detalhes2);
-    border-radius: 100%;
-    background-color: var(--cor-detalhes2);
-    color: var(--cor-primaria);
-    letter-spacing: 10px;
-    font-weight: 300;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
-  }
-
-  .dif_1:nth-child(1):hover, .dif_1:nth-child(3):hover {
-    border: 5px solid var(--cor-detalhes2);
-    color: var(--cor-detalhes2);
-    background-color: transparent;
-    transition: all 0.5s;
-  }
