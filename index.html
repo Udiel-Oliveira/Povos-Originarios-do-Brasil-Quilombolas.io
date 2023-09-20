@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Quilombolas</title>
 </head>
 <body>
 <header>
@@ -52,7 +52,7 @@
                 profundas e expressões artísticas que deram<br> 
                 forma a esse povo vibrante e resiliente.</p>
 
-            <a href="#"><button id="btn_it1">Saíba Mais <i class="fa-solid fa-chevron-down arrow_btn" style="color: #ffffff;"></i></button></a>
+            <a href="#slider1"><button id="btn_it1">Saíba Mais <i class="fa-solid fa-chevron-down arrow_btn" style="color: #ffffff;"></i></button></a>
         </div>
         <div class="item_2">
             <img src="imagens/Imagem_homepage.png" id="img_it2" alt="Mulher Quilombola">
@@ -75,7 +75,55 @@
                 
         </div>
     </div>
+    <section>
+
+        <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: var(--cor-primaria);" class="mySwiper"
+        speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+        <div slot="container-start" class="parallax-bg"
+          style="" data-swiper-parallax="-23%"></div>
     
+        <swiper-slide id="slider1" class="sliders">
+          <h1 class="slider_title">Como eles<br> surgiram</h1>
+
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+                Originados da resistência africana<br> 
+                contra a escravidão, escravizados<br>
+                fugitivos de suas fazendas buscaram<br>
+                liberdade nas áreas isoladas, onde<br> 
+                formaram comunidades<br> 
+                independentes, se organizando de<br> 
+                acordo com suas próprias tradições<br> 
+                culturais e sociais.
+            </p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide id="slider2" class="sliders">
+          <h1 class="slider_title">Quem são<br> eles </h1>
+          <div class="text">
+            <p>
+                Resumidamente, quilombolas são os<br> 
+                habitantes de um quilombo, um local<br> 
+                onde buscaram um refúgio das<br> 
+                condições cruéis aos que passavam
+            </p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide id="slider3" >
+          <h1 class="title_3">Dificuldades - Gerais</h1>
+          <div class="dificuldades" data-swiper-parallax="-100">
+            <h2 class="dif_1">Infra<br>estru<br>tura</h2>
+            <h2 class="dif_2">Educa<br>ção</h2>
+            <h2 class="dif_1">Saúde</h2>
+            <h2 class="dif_2">Terras</h2>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+
+    </section>
 </main>
 
 <footer>
@@ -86,6 +134,7 @@
 
 
         <div class="scripts">
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -93,6 +142,5 @@
         </div>
   </body>
 </html>
-
 
 
