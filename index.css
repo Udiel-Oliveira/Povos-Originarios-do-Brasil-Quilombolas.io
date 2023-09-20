@@ -371,6 +371,7 @@ swiper-slide {
     justify-content: space-around;
     align-items: center;
   }
+
   .dif_2:nth-child(4)
   {
     padding: 115px 50px;
@@ -395,10 +396,18 @@ swiper-slide {
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
   }
+
+.dif_2:nth-child(2):hover, .dif_2:nth-child(4):hover {
+    border: 5px solid var(--cor-detalhes2);
+    color: var(--cor-primaria);
+    background-color: var(--cor-detalhes2);
+    transition: all 0.5s;
+  }
+
   .dif_1:nth-child(1)
   {
     padding: 85px 65px;
-    border: 1px solid var(--cor-detalhes2);
+    border: 5px solid var(--cor-detalhes2);
     border-radius: 100%;
     background-color: var(--cor-detalhes2);
     color: var(--cor-primaria);
@@ -408,10 +417,11 @@ swiper-slide {
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
   }
+  
   .dif_1:nth-child(3)
   {
     padding: 120px 65px;
-    border: 1px solid var(--cor-detalhes2);
+    border: 5px solid var(--cor-detalhes2);
     border-radius: 100%;
     background-color: var(--cor-detalhes2);
     color: var(--cor-primaria);
@@ -420,4 +430,11 @@ swiper-slide {
     font-size: 30px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
+  }
+
+  .dif_1:nth-child(1):hover, .dif_1:nth-child(3):hover {
+    border: 5px solid var(--cor-detalhes2);
+    color: var(--cor-detalhes2);
+    background-color: transparent;
+    transition: all 0.5s;
   }
