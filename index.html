@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Quilombolas</title>
 </head>
 <body>
+    <button id="hoverButton"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></button>
+    
 <header>
 
     <nav>
@@ -44,7 +46,7 @@
 
 <main>
 
-    <div class="container2">
+    <section class="container2">
         <div class="item_1">
             <h1><span id="q">Q</span>uilom<span id="bol">bol</span>as</h1>
 
@@ -61,7 +63,7 @@
         <div class="item_2">
             <img src="imagens/Imagem_homepage.png" id="img_it2" alt="Mulher Quilombola">
         </div>
-    </div>
+    </section>
 
     <div class="circulos">
         <div class="circulo2">
@@ -136,8 +138,29 @@
 
 
 
-
         <div class="scripts">
+            <script>
+                // Função para verificar a posição da rolagem e mostrar/ocultar o botão
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("hoverButton").style.display = "block";
+                    } else {
+                        document.getElementById("hoverButton").style.display = "none";
+                    }
+                }
+
+                // Adicionar um evento de rolagem ao documento
+                window.onscroll = function() {
+                    scrollFunction();
+                };
+
+                // Função para rolar suavemente de volta ao topo
+                document.getElementById("hoverButton").addEventListener("click", function() {
+                    document.body.scrollTop = 0; // Para navegadores da web
+                    document.documentElement.scrollTop = 0; // Para o Internet Explorer
+                });
+            </script>
+
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
