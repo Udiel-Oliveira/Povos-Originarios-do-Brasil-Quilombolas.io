@@ -575,7 +575,7 @@ main{
 }
 
 
-@media (max-width: 720px){
+@media screen and (max-width: 720px){
     .container2 {
         
         padding: 2.5rem;
@@ -685,8 +685,13 @@ main{
   }
 }
 
-/*
-@media (max-width: 720px){
+
+
+
+
+
+
+@media (max-width: 426px){
     .container2 {
  
         padding: 1rem;
@@ -698,13 +703,13 @@ main{
     }
     .circulo1
     {
-        left: 9rem;
-        top: 21rem;
-        width: 15rem;
-        height: 15rem;
+        left: 5rem;
+        top: 22rem;
+        width: 25rem;
+        height: 25rem;
     }
     .item_1 h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin-left: -5.5rem;
     }
     .item_1 h2
@@ -724,29 +729,33 @@ main{
     }
     #text_it1
     {
-        font-size: 18px;
-        width: 300px;
+        font-size: 20px;
+        width: 220px;
     }
     #q
     {
-        padding-left: 3.5rem;
+        padding-left: 4.5rem;
     }
     #img_it2
     {
-        width: 15rem;
-        left: 8rem;
-        top: 18rem;
+        width: 30rem;
+        left: 4rem;
+        top: 16rem;
         z-index: -1;
+    }
+    #slider3
+    {
+        padding: 3rem;
     }
     .arrow_btn
     {
-        margin-left: 2rem;
+        margin-left: 4rem;
         font-size: 15px;
     }
     #btn_it1
     {
-        font-size: 11px;
-        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        font-size: 15px;
+        padding: 0.5rem 2rem 0.5rem 0.5rem;
     }
     .sliders
     {
@@ -756,9 +765,13 @@ main{
     .title_3
     {
         margin-top: 0rem;
-        font-size: 65px;
+        font-size: 45px;
     }
-
+    .slider_title
+    {
+        font-size: 45px;
+        margin-bottom: 3rem;
+    }
     .dificuldades
     {
 
@@ -770,30 +783,32 @@ main{
   .dif_1:nth-child(1)
   {
 
-    padding: 4.31rem 3rem;
+    padding: 3.31rem 2rem;
     margin-right: 14rem;
+    font-size: 15px;
   }
   
   .dif_1:nth-child(3)
   {
 
-    padding: 6.5rem 3rem;
+    padding: 4.5rem 2rem;
     margin-right: 14rem;
+    font-size: 15px;
   }
 
 
   .dif_2:nth-child(4)
   {
 
-    padding: 6rem 2.125rem;
+    padding: 5rem 2.125rem;
     margin-left: 14rem;
+    font-size: 15px;
   }
   .dif_2:nth-child(2)
   {
 
-    padding: 5.25rem 2.75rem;
+    padding: 4rem 2rem;
     margin-left: 14rem;
+    font-size: 15px;
   }
 }
-
-*/
