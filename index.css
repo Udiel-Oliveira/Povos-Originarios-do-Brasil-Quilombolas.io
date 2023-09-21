@@ -649,7 +649,7 @@ main{
 
 
 
-
+/*
 
 @media (max-width: 450px){
     .container2 {
@@ -774,10 +774,10 @@ main{
     margin-left: 14rem;
     font-size: 15px;
   }
-}
+} */
 
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .container2 {
         grid-template-columns: 1fr; /* Uma única coluna em telas menores */
         padding: 1rem;
