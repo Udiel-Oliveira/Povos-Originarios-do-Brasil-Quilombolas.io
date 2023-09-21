@@ -528,6 +528,10 @@ main{
     body{
         max-width: 725px;
     }
+    .circulos
+    {
+        overflow-x: hidden;
+    }
     .item_2
     {
         width: 0%;
@@ -655,6 +659,10 @@ main{
         padding: 1rem;
         height: 100vh;
     }
+    .circulos
+    {
+        overflow-x: hidden;
+    }
     .circulo3, .circulo2, #btn_nav, .redes_sociais
     {
         display: none;
@@ -781,6 +789,10 @@ main{
     .circulo3, .circulo2, #btn_nav, .redes_sociais
     {
         display: none;
+    }
+    .circulos
+    {
+        overflow-x: hidden;
     }
     .circulo1
     {
