@@ -14,7 +14,7 @@ font-family: 'Rubik', sans-serif;
 body
 {
     background: linear-gradient(90deg, #2E0F0F -80.88%, #000 100%);
-    overflow-x:hidden;
+    min-width: 350px;
 }
 :root
 {
@@ -587,7 +587,7 @@ main{
     }
     .circulo1
     {
-        left: 15rem;
+        left: 10rem;
         top: 33rem;
         width: 35rem;
         height: 35rem;
