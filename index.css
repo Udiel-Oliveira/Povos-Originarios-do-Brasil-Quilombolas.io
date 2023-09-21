@@ -777,7 +777,7 @@ main{
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .container2 {
         grid-template-columns: 1fr; /* Uma única coluna em telas menores */
         padding: 1rem;
@@ -787,19 +787,37 @@ main{
     {
         display: none;
     }
+    .title_3
+    {
+        font-size: 35px;
+    }
+    .sliders
+    {
+        justify-content: unset;
+        padding: 3rem;
+    }
+    .slider_title
+    {
+        font-size: 35px;
+        margin-bottom: 7rem;
+    }
+    #btn_it1
+    {
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+    }
     .circulos
     {
         overflow-x: hidden;
     }
     .circulo1
     {
-        left: 5rem;
-        top: 18.5rem;
-        width: 20rem;
-        height: 20rem;
+        left: 6rem;
+        top: 16rem;
+        width: 25rem;
+        height: 25rem;
     }
     .item_1 h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-left: -4rem;
     }
     .item_1 h2
@@ -826,9 +844,58 @@ main{
     }
     #img_it2
     {
-        width: 18.75rem;
-        left: 3rem;
-        top: 19rem;
+        width: 25rem;
+        left: 4rem;
+        top: 10rem;
         z-index: -1;
     }
+    .arrow_btn
+    {
+        margin-left: 1rem;
+    }
+    .text
+    {
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .dificuldades
+    {
+
+      flex-direction: column;
+
+      margin-top: 3rem;
+    }
+    
+  .dif_1:nth-child(1)
+  {
+
+    padding: 1.5rem 0.25rem;
+    margin-right: 7rem;
+    font-size: 15px;
+  }
+  
+  .dif_1:nth-child(3)
+  {
+
+    padding: 3rem 0.5rem;
+    margin-right: 7rem;
+    font-size: 15px;
+  }
+
+
+  .dif_2:nth-child(4)
+  {
+
+    padding: 3rem 0rem;
+    margin-left: 7rem;
+    font-size: 15px;
+  }
+  .dif_2:nth-child(2)
+  {
+
+    padding: 2.5rem 0.5rem;
+    margin-left: 7rem;
+    font-size: 15px;
+  }
 }
