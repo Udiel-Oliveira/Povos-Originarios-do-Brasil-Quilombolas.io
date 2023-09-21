@@ -837,6 +837,7 @@ main{
     #text_it1
     {
         font-size: 18px;
+        width: 250px;
     }
     #q
     {
@@ -848,6 +849,7 @@ main{
         left: 4rem;
         top: 10rem;
         z-index: -1;
+        
     }
     .arrow_btn
     {
