@@ -691,7 +691,7 @@ main{
 
 
 
-@media (max-width: 426px){
+@media screen and (max-width: 426px){
     .container2 {
  
         padding: 1rem;
