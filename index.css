@@ -522,60 +522,17 @@ main{
 
 
 
-@media (max-width: 320px) {
-    .container2 {
-        grid-template-columns: 1fr; /* Uma única coluna em telas menores */
-        padding: 1rem;
-        height: 100vh;
-    }
-    .circulo3, .circulo2, #btn_nav, .redes_sociais
-    {
-        display: none;
-    }
-    .circulo1
-    {
-        left: 5rem;
-        top: 18.5rem;
-        width: 20rem;
-        height: 20rem;
-    }
-    .item_1 h1{
-        font-size: 2.5rem;
-        margin-left: -4rem;
-    }
-    .item_1 h2
-    {
-        margin-top: 0rem;
-        font-size: 1.5rem;
-    }
-    .item_1
-    {
-        margin-left: 0rem;
-    }
-    #bol
-    {
-        padding-bottom: 0.8rem;
-        padding-top: 0.8rem;
-    }
-    #text_it1
-    {
-        font-size: 18px;
-    }
-    #q
-    {
-        padding-left: 3.5rem;
-    }
-    #img_it2
-    {
-        width: 18.75rem;
-        left: 3rem;
-        top: 19rem;
-        z-index: -1;
-    }
-}
 
 
-@media screen and (max-width: 720px){
+@media (max-width: 725px){
+    body{
+        max-width: 725px;
+    }
+    .item_2
+    {
+        width: 0%;
+        height: 0%;
+    }
     .container2 {
         
         padding: 2.5rem;
@@ -587,10 +544,11 @@ main{
     }
     .circulo1
     {
-        left: 10rem;
+        left: 8rem;
         top: 33rem;
         width: 35rem;
         height: 35rem;
+        overflow-x: hidden;
     }
     .item_1 h1{
         font-size: 5.5rem;
@@ -691,7 +649,7 @@ main{
 
 
 
-@media screen and (max-width: 426px){
+@media (max-width: 450px){
     .container2 {
  
         padding: 1rem;
@@ -703,7 +661,7 @@ main{
     }
     .circulo1
     {
-        left: 5rem;
+        left: 0rem;
         top: 22rem;
         width: 25rem;
         height: 25rem;
@@ -811,4 +769,57 @@ main{
     margin-left: 14rem;
     font-size: 15px;
   }
+}
+
+
+@media (max-width: 320px) {
+    .container2 {
+        grid-template-columns: 1fr; /* Uma única coluna em telas menores */
+        padding: 1rem;
+        height: 100vh;
+    }
+    .circulo3, .circulo2, #btn_nav, .redes_sociais
+    {
+        display: none;
+    }
+    .circulo1
+    {
+        left: 5rem;
+        top: 18.5rem;
+        width: 20rem;
+        height: 20rem;
+    }
+    .item_1 h1{
+        font-size: 2.5rem;
+        margin-left: -4rem;
+    }
+    .item_1 h2
+    {
+        margin-top: 0rem;
+        font-size: 1.5rem;
+    }
+    .item_1
+    {
+        margin-left: 0rem;
+    }
+    #bol
+    {
+        padding-bottom: 0.8rem;
+        padding-top: 0.8rem;
+    }
+    #text_it1
+    {
+        font-size: 18px;
+    }
+    #q
+    {
+        padding-left: 3.5rem;
+    }
+    #img_it2
+    {
+        width: 18.75rem;
+        left: 3rem;
+        top: 19rem;
+        z-index: -1;
+    }
 }
