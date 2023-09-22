@@ -87,6 +87,7 @@ nav
     color: var(--cor-primaria);
     border: 2px solid var(--cor-secundaria);
     padding: 2px;
+    animation: rotate 15s linear infinite;
 }
 .dark_mode
 {
