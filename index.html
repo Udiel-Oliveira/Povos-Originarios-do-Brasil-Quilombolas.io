@@ -27,17 +27,13 @@
 
         <div class="container_menu">
 
-            
-
             <div class="redes_sociais">
-                <a href="#"><button id="btn_nav">claro escuro</button></a>
+                <button id="btn_nav"><i class="fa-solid fa-sun" id="sun"></i> <i class="fa-solid fa-moon" id="moon"></i></button>
 
-                <div id="facebook"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></div>
-                <div id="instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
-                <div id="github"><i class="fa-brands fa-github" style="color: #ffffff;"></i></div>
+                <a href="https://www.facebook.com/etec144/" target="_blank"><div id="facebook"><i class="fa-brands fa-facebook"></i></div></a>
+                <a href="https://www.instagram.com/eteccarapicuiba/" target="_blank"><div id="instagram"><i class="fa-brands fa-instagram"></i></div></a>
+                <a href="https://github.com/K1Melo/pjct-quilombolas" target="_blank" rel="noopener noreferrer"><div id="github"><i class="fa-brands fa-github"></i></div></a>
             </div>
-
-            
 
         </div>
     </nav>
@@ -58,7 +54,7 @@
                 profundas e expressões artísticas que deram 
                 forma a esse povo vibrante e resiliente.</p>
 
-            <a href="#slider1"><button id="btn_it1">Saíba Mais <i class="fa-solid fa-chevron-down arrow_btn" style="color: #ffffff;"></i></button></a>
+            <a href="#slider1"><button id="btn_it1">Saíba Mais <i class="fa-solid fa-chevron-down arrow_btn"></i></button></a>
         </div>
         <div class="item_2">
             <img src="imagens/Imagem_homepage.png" id="img_it2" alt="Mulher Quilombola">
@@ -159,6 +155,15 @@
                     document.body.scrollTop = 0; // Para navegadores da web
                     document.documentElement.scrollTop = 0; // Para o Internet Explorer
                 });
+
+
+                // Change Mode
+                const modeToggle = document.getElementById('btn_nav');
+        const body = document.body;
+
+        modeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark_mode');
+        });
             </script>
 
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
