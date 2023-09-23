@@ -366,15 +366,17 @@ main{
 }
 #slider1
 {
-    background-image: url(/imagens/slider-\ 1\ black.png);
+    background-image: url(imagens/slider-\ 1\ -\ black.png);
+    display: flex;
 }
 .dark_mode #slider2
 {
     background-image: url(imagens/slider-\ 2\ -light.png);
+    display: flex;
 }
 #slider2
 {
-    background-image: url(/imagens/slider-\ 2\ black.png);
+    background-image: url(imagens/slider-\ 2\ -\ black.png);
 }
 .dark_mode #slider3
 {
@@ -389,13 +391,15 @@ main{
     width: 100%;
     height: 100vh;
     padding: 2.5rem 6.25rem;
-    background-image: url(imagens/slider-\ 3\ black.png);
+    background-image: url(imagens/slider-\ 3\ -black.png);
     background-repeat: no-repeat;
     background-size: 100%;
     
 }
 .slider_title
 {
+    display: flex;
+    flex: 1;
 /*Box model stuff*/
     margin-bottom: 3rem;
 /*Typography stuff*/
@@ -410,6 +414,8 @@ main{
 }
 .text 
 {
+    display: flex;
+    flex: 1;
 /*Typography stuff*/
     font-family: 'Rubik', sans-serif;
     font-size: 25px;
@@ -592,12 +598,145 @@ main{
 
 
 
+@media (max-width: 1024px) {
+    .container2 {
+        display: flex;
+        padding: 3rem 3rem 0rem 3rem;
+        height: 100vh;
+    }
+    .circulo3
+    {
+        display: none;
+    }
+    #slider3
+    {
+        padding: 3rem;
+    }
+    .title_3
+    {
+        font-size: 80px;
+    }
+    .sliders
+    {
+        justify-content: unset;
+        padding: 3rem 5rem;
+    }
+    .slider_title
+    {
+        font-size: 80px;
+        margin-bottom: 0rem;
+    }
+    .text
+    {
+        font-size: 40px;
+        width: 100%;
+    }
+    #slider1
+    {
+        background-image: url(imagens/slider-\ 1\ -black\ -\ \ teste.png);
+    }
+    #slider2
+    {
+        background-image: url(imagens/slider-\ 2\ -\ mobile\ -\ black.png);
+    }
+    #slider3
+    {
+        background-image: url(imagens/slider-\ 3\ -\ mobile\ -black.png);
+    }
+    .arrow_btn
+    {
+        font-size: 24px;
+        margin-left: 7rem;
+    }
+    #btn_it1
+    {
+        padding: 1rem 2rem;
+        font-size: 24px;
+    }
+    .circulos
+    {
+        overflow-x: hidden;
+    }
+    .circulo1
+    {
+        left: 24rem;
+        top: 16rem;
+        width: 55rem;
+        height: 55rem;
+    }
+    .item_1 h1{
+        font-size: 8rem;
+        margin-right: 7rem;
+    }
+    .item_1 h2
+    {
+        margin-top: 0rem;
+        font-size: 3.5rem;
+        width: 490px;
+    }
+    .item_1
+    {
+        flex: 1;
+        margin-left: 0rem;
+    }
+    .item_2
+    {
+        align-items: flex-end;
+        flex: 1;
+    }
+    #bol
+    {
+        padding-bottom: 1.8rem;
+        padding-top: 1.8rem;
+    }
+    #text_it1
+    {
+        font-size: 35px;
+        width: 660px;
+    }
+    #q
+    {
+        padding-left: 6.5rem;
+    }
+    #img_it2
+    {
+        width: 100%;
+        left: 30%;
+        z-index: -1;
+        position: absolute;
+    }
+    
+    .dificuldades
+    {
+
+      flex-direction: column;
+
+      margin-top: 3rem;
+    }
+    .dif_1
+    {
+        width: 13.5rem;
+        height: 13.5rem;
+        font-size: 25px;
+        margin-right: 30rem;
+    }
+    .swiper-button-next svg, .swiper-button-prev svg
+    {
+        display: none;
+    }
+    .dif_2
+    {
+        width: 13.5rem;
+        height: 13.5rem;
+        font-size: 25px;
+        margin-left: 30rem;
+    }
+}
 
 
 
 
-
-@media (max-width: 725px){
+@media (max-width: 780px){
     body{
         max-width: 725px;
     }
@@ -607,11 +746,13 @@ main{
     }
     .item_2
     {
+        align-items: flex-end;
         flex: 1;
+        
     }
     .container2 {
         display: flex;
-        padding: 2.5rem;
+        padding: 2.5rem 2.5rem 0rem 2.5rem;
         height: 100vh;
     }
     .circulo3, .circulo2, #btn_nav, .redes_sociais
@@ -660,7 +801,6 @@ main{
     {
         width: 80%;
         left: 35%;
-        top: 35%;
         z-index: -1;
         position: absolute;
     }
@@ -682,7 +822,7 @@ main{
     .title_3
     {
         margin-top: 0rem;
-        font-size: 65px;
+        font-size: 52px;
     }
 
     .dificuldades
@@ -693,14 +833,16 @@ main{
       margin-top: 3rem;
     }
     .dif_1{
-        width: 13rem;
-        height: 13rem;
+        width: 12rem;
+        height: 12rem;
         margin-right: 14rem;
+        font-size: 25px;
     }
     .dif_2{
-        width: 13rem;
-        height: 13rem;
+        width: 12rem;
+        height: 12rem;
         margin-left: 14rem;
+        font-size: 25px;
     }
 
 }
@@ -708,139 +850,10 @@ main{
 
 
 
-
-/*
-
-@media (max-width: 450px){
-    .container2 {
-        padding: 1rem;
-        height: 100vh;
-    }
-    .circulos
-    {
-        overflow-x: hidden;
-    }
-    .circulo3, .circulo2, #btn_nav, .redes_sociais
-    {
-        display: none;
-    }
-    .circulo1
-    {
-        left: 0rem;
-        top: 22rem;
-        width: 25rem;
-        height: 25rem;
-    }
-    .item_1 h1{
-        font-size: 1.5rem;
-        margin-left: -5.5rem;
-    }
-    .item_1 h2
-    {
-        margin-top: 0rem;
-        font-size: 1.5rem;
-        width: 350px;
-    }
-    .item_1
-    {
-        margin-left: 0rem;
-    }
-    #bol
-    {
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-    #text_it1
-    {
-        font-size: 20px;
-        width: 220px;
-    }
-    #q
-    {
-        padding-left: 4.5rem;
-    }
-    #img_it2
-    {
-        width: 30rem;
-        left: 4rem;
-        top: 16rem;
-        z-index: -1;
-    }
-    #slider3
-    {
-        padding: 3rem;
-    }
-    .arrow_btn
-    {
-        margin-left: 4rem;
-        font-size: 15px;
-    }
-    #btn_it1
-    {
-        font-size: 15px;
-        padding: 0.5rem 2rem 0.5rem 0.5rem;
-    }
-    .sliders
-    {
-        padding: 4rem;
-    }
-
-    .title_3
-    {
-        margin-top: 0rem;
-        font-size: 45px;
-    }
-    .slider_title
-    {
-        font-size: 45px;
-        margin-bottom: 3rem;
-    }
-    .dificuldades
-    {
-
-      flex-direction: column;
-
-      margin-top: 3rem;
-    }
-    
-  .dif_1:nth-child(1)
-  {
-
-    padding: 3.31rem 2rem;
-    margin-right: 14rem;
-    font-size: 15px;
-  }
-  
-  .dif_1:nth-child(3)
-  {
-
-    padding: 4.5rem 2rem;
-    margin-right: 14rem;
-    font-size: 15px;
-  }
-
-
-  .dif_2:nth-child(4)
-  {
-
-    padding: 5rem 2.125rem;
-    margin-left: 14rem;
-    font-size: 15px;
-  }
-  .dif_2:nth-child(2)
-  {
-
-    padding: 4rem 2rem;
-    margin-left: 14rem;
-    font-size: 15px;
-  }
-} */
-
-
 @media (max-width: 450px) {
     .container2 {
         display: flex;
-        padding: 1rem;
+        padding: 1rem 1rem 0rem 1rem;
         height: 100vh;
     }
     .circulo3, .circulo2, .redes_sociais
@@ -853,7 +866,8 @@ main{
     }
     .title_3
     {
-        font-size: 35px;
+        font-size: 30px;
+        margin-bottom: 0rem;
     }
     .sliders
     {
@@ -901,6 +915,7 @@ main{
     }
     .item_2
     {
+        align-items: flex-end;
         flex: 1;
     }
     #bol
@@ -921,7 +936,6 @@ main{
     {
         width: 100%;
         left: 30%;
-        top: 35%;
         z-index: -1;
         
     }
@@ -937,10 +951,8 @@ main{
 
     .dificuldades
     {
-
       flex-direction: column;
-
-      margin-top: 3rem;
+      margin-top: 0.5rem;
     }
     .dif_1
     {
