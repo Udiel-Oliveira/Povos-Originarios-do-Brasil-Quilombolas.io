@@ -96,11 +96,12 @@ nav
 
 
 /*---------------[ icone - nav ]----------------->*/
-.icon img, .menu img
+#icones, .menu img
 {
     width: 85%;
     cursor: pointer;
 }
+
 .container_menu
 {
 /*Display stuff*/
@@ -359,13 +360,25 @@ main{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.dark_mode #slider1
+{
+    background-image: url(imagens/slider-\ 1\ -\ light.png);
+}
 #slider1
 {
     background-image: url(/imagens/slider-\ 1\ black.png);
 }
+.dark_mode #slider2
+{
+    background-image: url(imagens/slider-\ 2\ -light.png);
+}
 #slider2
 {
     background-image: url(/imagens/slider-\ 2\ black.png);
+}
+.dark_mode #slider3
+{
+    background-image: url(imagens/slider-\ 3\ -\ ligth.png);
 }
 #slider3
 {
@@ -391,6 +404,9 @@ main{
     font-weight: 700;
     text-transform: uppercase;
     color: var(--cor-primaria);
+}
+.dark_mode .text{
+    color: var(--cor-detalhes1);
 }
 .text 
 {
@@ -450,13 +466,17 @@ main{
 /*Box model stuff*/
     margin-top: 5rem;
   }
-
-  .dif_2:nth-child(4)
-  {
+  .dif_2{
+/*Display stuff*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 /*Box model stuff*/
-    padding: 7rem 3.125rem;
+    width: 17.5rem;
+    height: 17.5rem;
     border: 5px solid var(--cor-detalhes2);
     border-radius: 100%;
+    background: transparent;
 /*Typography stuff*/
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
@@ -466,75 +486,42 @@ main{
 /*Miscellaneous*/
     letter-spacing: 10px;
   }
-  .dif_2:nth-child(2)
-  {
-/*Box model stuff*/
-    padding: 6.25rem 3.75rem;
-    border: 5px solid var(--cor-detalhes2);
-    border-radius: 100%;
-/*Typography stuff*/
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: var(--cor-detalhes2);
-/*Miscellaneous*/
-    letter-spacing: 10px;
-  }
-
-.dif_2:nth-child(2):hover, .dif_2:nth-child(4):hover {
-/*Box model stuff*/
+.dif_2:hover
+{
+    /*Box model stuff*/
     border: 5px solid var(--cor-detalhes2);
     background-color: var(--cor-detalhes2);
 /*Typography stuff*/
     color: var(--cor-primaria);
 /*Manipulations stuff*/
     transition: all 0.5s;
-  }
+}
 
-  .dif_1:nth-child(1)
-  {
-/*Box model stuff*/
-    padding: 5.31rem 4rem;
+.dif_1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 17.5rem;
+    height: 17.5rem;
     border: 5px solid var(--cor-detalhes2);
     border-radius: 100%;
     background-color: var(--cor-detalhes2);
-/*Typography stuff*/
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
     color: var(--cor-primaria);
-/*Miscellaneous*/
     letter-spacing: 10px;
-  }
-  
-  .dif_1:nth-child(3)
-  {
-/*Box model stuff*/
-    padding: 7.5rem 4rem;
-    border: 5px solid var(--cor-detalhes2);
-    border-radius: 100%;
-    background-color: var(--cor-detalhes2);
-/*Typography stuff*/
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: var(--cor-primaria);
-/*Miscellaneous*/
-    letter-spacing: 10px;
-  }
-
-  .dif_1:nth-child(1):hover, .dif_1:nth-child(3):hover {
-/*Box model stuff*/
+}
+.dif_1:hover{
+    /*Box model stuff*/
     border: 5px solid var(--cor-detalhes2);
     background-color: transparent;
-/*Typography stuff*/
+    /*Typography stuff*/
     color: var(--cor-detalhes2);
-/*Manipulations stuff*/
+    /*Manipulations stuff*/
     transition: all 0.5s;
-  }
+}
 
 /*---------------------------[ Slide 3 ]--------->*/
 
@@ -705,34 +692,17 @@ main{
 
       margin-top: 3rem;
     }
-    
-  .dif_1:nth-child(1)
-  {
+    .dif_1{
+        width: 13rem;
+        height: 13rem;
+        margin-right: 14rem;
+    }
+    .dif_2{
+        width: 13rem;
+        height: 13rem;
+        margin-left: 14rem;
+    }
 
-    padding: 4.31rem 3rem;
-    margin-right: 14rem;
-  }
-  
-  .dif_1:nth-child(3)
-  {
-
-    padding: 6.5rem 3rem;
-    margin-right: 14rem;
-  }
-
-
-  .dif_2:nth-child(4)
-  {
-
-    padding: 6rem 2.125rem;
-    margin-left: 14rem;
-  }
-  .dif_2:nth-child(2)
-  {
-
-    padding: 5.25rem 2.75rem;
-    margin-left: 14rem;
-  }
 }
 
 
@@ -895,9 +865,14 @@ main{
         font-size: 35px;
         margin-bottom: 7rem;
     }
+    .arrow_btn
+    {
+        font-size: 15px;
+    }
     #btn_it1
     {
         padding: 0.5rem 1rem 0.5rem 0.5rem;
+        font-size: 15px;
     }
     .circulos
     {
@@ -967,36 +942,22 @@ main{
 
       margin-top: 3rem;
     }
-    
-  .dif_1:nth-child(1)
-  {
-
-    padding: 1.5rem 0.25rem;
-    margin-right: 7rem;
-    font-size: 15px;
-  }
-  
-  .dif_1:nth-child(3)
-  {
-
-    padding: 3rem 0.5rem;
-    margin-right: 7rem;
-    font-size: 15px;
-  }
-
-
-  .dif_2:nth-child(4)
-  {
-
-    padding: 3rem 0rem;
-    margin-left: 7rem;
-    font-size: 15px;
-  }
-  .dif_2:nth-child(2)
-  {
-
-    padding: 2.5rem 0.5rem;
-    margin-left: 7rem;
-    font-size: 15px;
-  }
+    .dif_1
+    {
+        width: 6.5rem;
+        height: 6.5rem;
+        font-size: 10px;
+        margin-right: 7rem;
+    }
+    .swiper-button-next svg, .swiper-button-prev svg
+    {
+        display: none;
+    }
+    .dif_2
+    {
+        width: 6.5rem;
+        height: 6.5rem;
+        font-size: 10px;
+        margin-left: 7rem;
+    }
 }
